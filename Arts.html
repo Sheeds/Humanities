@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=divices-width, initial-scale=1.0">
+    <title>BSCS 2A Online Exhibit</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="path/to/material-icons/material-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+                <a href="Bscs.html"> <img src="BSCS/1.jpg" alt=""></a>
+                <div class="nav-links" id="navLinks">
+            <div class="full-img" id="fullImgBox">
+                <img src="BSCS/sei.jpg" id="fullImg">
+                <div class="description" id="descriptionBox">
+                    <p id="descriptionText"></p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="Bscs.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Arts.html">VISUAL ARTS</a></li>
+                <li><a href="Contact.html">PERFROMANCE ARTS</a></li>
+            </ul>
+        </div>
+        <span class="fa fa-bars" onclick="showMenu()"></span>
+        </nav>
+        <h1>ARTS</h1>
+        </section>
+
+<!------ ARTS ------>
+
+<section class="courses">
+    <h1>Courses We Offer</h1>
+    <p>TEST RUNNNNNNNNNNNNNNNNNNNNN</p>
+
+    <div class="row">
+        <div class="courses-col">
+            <h3>Intermediate</h3>
+            <p>Arts refer to various forms of human creative expression, such as painting, sculpture, music, literature, dance, theater, and film, that are created primarily for aesthetic and communicative purposes.</p>
+        </div>
+        <div class="courses-col">
+            <h3>Degree</h3>
+            <p>The arts encompass a wide range of styles, genres, and mediums, and often reflect the cultural, social, and historical contexts in which they are produced. </p>
+        </div>
+        <div class="courses-col">
+            <h3>Post Graduation</h3>
+            <p>While the definition of art can be subjective and vary across cultures and individuals, it generally involves the use of skill, imagination, and creativity to produce works that evoke emotional, intellectual, and sensory responses from audiences.            </p>
+        </div>
+    </div>
+</section>
+
+<!------ Facilities ------>
+
+<div class="BSCS">
+    <div class="full-img" id="fullImgBox">
+        <img src="BSCS/sei.jpg" id="fullImg">
+        </div>
+    </div>
+    <div class="BSCS">
+        <a href="sei.html"><img id="first" src="BSCS/sei.jpg"></a>
+        <a href="jek.html"><img id="second" src="BSCS/jek.jpg"></a>
+        <a href="mark.html"><img id="3" src="BSCS/mj.jpg"></a>
+        <a href="jorick.html"><img id="4" src="BSCS/jorick.jpg"></a>
+        <a href="lean.html"><img id="5" src="BSCS/lean.jpg"></a>
+        <a href="kurt.html"><img id="6" src="BSCS/kurt.jpg"></a>
+        <a href="sam.html"><img id="7" src="BSCS/sam.jpg"></a>
+        <a href="russ.html"><img id="8" src="BSCS/russ.jpg"></a>
+        <a href="pat.html"><img id="9" src="BSCS/pat.jpg"></a>
+        <a href="cys.html"><img id="10" src="BSCS/crys.jpg"></a>
+        <a href="stef.html"><img id="11" src="BSCS/stef.jpg"></a>
+        <a href="izza.html"><img id="12" src="BSCS/izza.jpg"></a>
+        <a href="majoe.html"><img id="13" src="BSCS/majoe.jpg"></a>
+
+
+    <div class="feature-img">
+        <img src="BSCS/pic1.png" width="100%">
+        <img src="BSCS/play.png" class="play-btn" onclick="playVideo('BSCS/video.mp4')">
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay muted id="myVideo">
+                <source src="BSCS/video.mp4" type="video/mp4">
+        </video>
+        <img src="BSCS/close.png" class="close_btn" onclick="stopVideo()">
+    </div>
+
+
+
+</div>
+
+
+<!------ footer ------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> TESTTT RUNNNNNNNNNNNNNNNNNNNNN</p>
+        <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-Instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+</section>
+
+
+
+<!------Toogle Menu Botton------>
+
+<script>
+            
+        var videoPlayer=document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+        videoPlayer.style.display = "none";
+        myVideo.muted = true;
+        }
+
+        function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+        myVideo.muted = false;
+        }
+
+        
+</script>
+
+</html>

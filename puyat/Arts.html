@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=divices-width, initial-scale=1.0">
+    <title>BSCS 2A Online Exhibit</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="path/to/material-icons/material-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+                <a href="Bscs.html"> <img src="BSCS/1.jpg" alt=""></a>
+                <div class="nav-links" id="navLinks">
+            <div class="full-img" id="fullImgBox">
+                <img src="BSCS/sei.jpg" id="fullImg">
+                <span onclick="closefullImg()">x</span>
+                <div class="description" id="descriptionBox">
+                    <p id="descriptionText"></p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="Bscs.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Arts.html">VISUAL ARTS</a></li>
+                <li><a href="Contact.html">PERFROMANCE ARTS</a></li>
+            </ul>
+        </div>
+        <span class="fa fa-bars" onclick="showMenu()"></span>
+        </nav>
+        <h1>ARTS</h1>
+        </section>
+
+<!------ ARTS ------>
+
+<section class="courses">
+    <h1>Courses We Offer</h1>
+    <p>TEST RUNNNNNNNNNNNNNNNNNNNNN</p>
+
+    <div class="row">
+        <div class="courses-col">
+            <h3>Intermediate</h3>
+            <p>Arts refer to various forms of human creative expression, such as painting, sculpture, music, literature, dance, theater, and film, that are created primarily for aesthetic and communicative purposes.</p>
+        </div>
+        <div class="courses-col">
+            <h3>Degree</h3>
+            <p>The arts encompass a wide range of styles, genres, and mediums, and often reflect the cultural, social, and historical contexts in which they are produced. </p>
+        </div>
+        <div class="courses-col">
+            <h3>Post Graduation</h3>
+            <p>While the definition of art can be subjective and vary across cultures and individuals, it generally involves the use of skill, imagination, and creativity to produce works that evoke emotional, intellectual, and sensory responses from audiences.            </p>
+        </div>
+    </div>
+</section>
+
+<!------ Facilities ------>
+<div class="full-img" id="fullImgBox">
+    <img src="BSCS/sei.jpg" id="fullImg">
+    <span onclick="closefullImg()">x</span>
+    <div class="description" id="descriptionBox">
+        <p id="descriptionText"></p>
+    </div>
+</div>
+
+<div class="BSCS">
+    <img src="BSCS/sei.jpg" onclick="openfullImg(this.src, 'Tinakbo pati 50 pesos')"> 
+    <img src="BSCS/crys.jpg" onclick="openfullImg(this.src, 'Kuya ko may iphone 12 fully paid')">
+    <img src="BSCS/majoe.jpg" onclick="openfullImg(this.src, 'Pinagpalit sa Malapit')">
+    <img src="BSCS/izza.jpg" onclick="openfullImg(this.src, 'Besfriend ko lang yon')">
+    <img src="BSCS/stef.jpg" onclick="openfullImg(this.src, 'Dala kayo ID')">
+    <img src="BSCS/sam.jpg" onclick="openfullImg(this.src, 'Siya lang pahinga ko')">
+    <img src="BSCS/pat.jpg" onclick="openfullImg(this.src, 'Sikmurahan kita jek')">
+    <img src="BSCS/russ.jpg" onclick="openfullImg(this.src, 'BOBO KA MAG MINSITHAR')">
+    <img src="BSCS/jek.jpg" onclick="openfullImg(this.src, 'Gusto mo QwekQwek Pahawak muna')">
+    <img src="BSCS/mj.jpg" onclick="openfullImg(this.src, 'Dito tayo sa mahal kasi hindi ako mahal EO')">
+    <img src="BSCS/jorick.jpg" onclick="openfullImg(this.src, 'I only eat QwekQwek and PekPek')">
+    <img src="BSCS/kurt.jpg" onclick="openfullImg(this.src, 'Dito muna ako pre')">
+    <img src="BSCS/lean.jpg" onclick="openfullImg(this.src, 'Una na ako')">
+
+
+    <div class="feature-img">
+        <img src="BSCS/pic1.png" width="100%">
+        <img src="BSCS/play.png" class="play-btn" onclick="playVideo('BSCS/video.mp4')">
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay muted id="myVideo">
+                <source src="BSCS/video.mp4" type="video/mp4">
+        </video>
+        <img src="BSCS/close.png" class="close_btn" onclick="stopVideo()">
+    </div>
+
+
+
+</div>
+
+
+<!------ footer ------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> TESTTT RUNNNNNNNNNNNNNNNNNNNNN</p>
+        <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-Instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+</section>
+
+
+
+<!------Toogle Menu Botton------>
+
+<script>
+            
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        var descriptionBox = document.getElementById("descriptionBox");
+        var descriptionText = document.getElementById("descriptionText");
+
+        var videoPlayer=document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function openfullImg(pic, description){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+            descriptionText.innerHTML = description;
+            descriptionBox.style.display = "block";
+        }
+        function closefullImg(){
+            fullImgBox.style.display = "none";
+            descriptionBox.style.display = "none";
+        }
+        function stopVideo(){
+        videoPlayer.style.display = "none";
+        myVideo.muted = true;
+        }
+
+        function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+        myVideo.muted = false;
+        }
+
+        function openfullImg(pic, description){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+            descriptionText.innerHTML = description;
+            descriptionBox.style.display = "block";
+        }
+        function closefullImg(){
+            fullImgBox.style.display = "none";
+            descriptionBox.style.display = "none";
+        }
+
+        
+</script>
+
+</html>

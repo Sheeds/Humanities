@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=divices-width, initial-scale=1.0">
+    <title>BSCS 2A Online Exhibit</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="path/to/material-icons/material-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+        <a href="Bscs.html"> <img src="BSCS/1.jpg" alt=""></a>
+        <div class="nav-links" id="navLinks">
+        <span class="fa fa-times" onclick="hideMenu()"></span>
+            <ul>
+                <li><a href="Bscs.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Arts.html">VISUAL ARTS</a></li>
+                <li><a href="Contact.html">PERFROMANCE ARTS</a></li>
+            </ul>
+        </div>
+        <span class="fa fa-bars" onclick="showMenu()"></span>
+        </nav>
+        <h1>About Us</h1>
+        </section>
+
+<!------ about us content ------>
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the BSCS 2A</h1>
+                    <p> We can build this </p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="BSCS/about.jpg">
+                </div>
+            </div>
+        </section>
+
+
+<!------ footer ------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> TESTTT RUNNNNNNNNNNNNNNNNNNNNN</p>
+        <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-Instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+</section>
+
+
+
+<!------Toogle Menu Botton------>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
