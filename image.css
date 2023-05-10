@@ -70,3 +70,73 @@ body {
     color: #000;
     padding: 20px;
 }
+
+@media(max-width: 700px){
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #fff;
+        color: #000;
+    }
+    
+    .product-small-img img {
+        height: 80px;
+        margin: 5px 0;
+        cursor: pointer;
+        display: block;
+        opacity: .6;
+    }
+    
+    .product-small-img img:hover {
+        opacity: 1;
+    }
+    
+    .product-small-img {
+        float: left;
+    }
+    
+    .product {
+        position: relative;
+    }
+    
+    .img-container img {
+        height: 300px;
+    }
+    
+    .img-container {
+        float: right;
+        padding: 10px;
+    }
+    
+    .img-container h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .img-container p {
+        font-size: 20px;
+    }
+    
+    .return-btn {
+        position: fixed;
+        top: 40px;
+        right: 100px;
+        cursor: pointer;
+    }
+    
+    .return-btn img {
+        width: 50px;
+    }
+    
+    .description {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        background-color: #fff;
+        color: #000;
+        padding: 20px;
+    }
+}

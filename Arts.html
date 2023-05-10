@@ -28,26 +28,26 @@
         </div>
         <span class="fa fa-bars" onclick="showMenu()"></span>
         </nav>
-        <h1>ARTS</h1>
+        <h1>VISUAL ARTS</h1>
         </section>
 
 <!------ ARTS ------>
 
 <section class="courses">
-    <h1>Courses We Offer</h1>
+    <h1></h1>
     <p>TEST RUNNNNNNNNNNNNNNNNNNNNN</p>
 
     <div class="row">
         <div class="courses-col">
-            <h3>Intermediate</h3>
-            <p>Arts refer to various forms of human creative expression, such as painting, sculpture, music, literature, dance, theater, and film, that are created primarily for aesthetic and communicative purposes.</p>
+            <h3>What is Art</h3>
+            <p>As a creative expression of human thought and emotion, art is the manifestation of our innate desire to communicate, explore, and connect with the world around us. It encompasses a wide range of disciplines and mediums, from painting and sculpture to music and film, and serves as a reflection of our shared human experience.</p>
         </div>
         <div class="courses-col">
-            <h3>Degree</h3>
-            <p>The arts encompass a wide range of styles, genres, and mediums, and often reflect the cultural, social, and historical contexts in which they are produced. </p>
+            <h3>Personal Art</h3>
+            <p>Personal art is an expression of an individual's unique thoughts, emotions, and experiences, translated into visual or auditory form. It serves as a means of self-discovery, reflection, and communication, often reflecting the artist's distinct perspective on the world.</p>
         </div>
         <div class="courses-col">
-            <h3>Post Graduation</h3>
+            <h3></h3>
             <p>While the definition of art can be subjective and vary across cultures and individuals, it generally involves the use of skill, imagination, and creativity to produce works that evoke emotional, intellectual, and sensory responses from audiences.            </p>
         </div>
     </div>
@@ -78,35 +78,21 @@
         <a href="drilon.html"><img id="15" src="Arts/drilon1.jpg"></a>
         <a href="vanden.html"><img id="16" src="Arts/vanden1.jpg"></a>
         <a href="prado.html"><img id="17" src="Arts/prado1.jpg"></a>
-
-    <div class="feature-img">
-        <img src="BSCS/pic1.png" width="100%">
-        <img src="BSCS/play.png" class="play-btn" onclick="playVideo('BSCS/video.mp4')">
-    </div>
-    <div class="video-player" id="videoPlayer">
-        <video width="100%" controls autoplay muted id="myVideo">
-                <source src="BSCS/video.mp4" type="video/mp4">
-        </video>
-        <img src="BSCS/close.png" class="close_btn" onclick="stopVideo()">
-    </div>
-
-
-
 </div>
 
 
 <!------ footer ------>
 
     <section class="footer">
-        <h4>About Us</h4>
-        <p> TESTTT RUNNNNNNNNNNNNNNNNNNNNN</p>
+        <h4>Created On</h4>
+        <p>May 10,2023</p>
         <div class="icon">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-Instagram"></i>
             <i class="fab fa-linkedin"></i>
         </div>
-        <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+        <p>Made <i class="fa fa-heart-o"></i>by BSCS 2A</p>
     </section>
 
 </section>
@@ -116,7 +102,7 @@
 <!------Toogle Menu Botton------>
 
 <script>
-            
+        var navLinks = document.getElementById("navLinks");
         var videoPlayer=document.getElementById("videoPlayer");
         var myVideo = document.getElementById("myVideo");
 
@@ -129,6 +115,12 @@
         myVideo.src = file;
         videoPlayer.style.display = "block";
         myVideo.muted = false;
+        }
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px";
         }
 
         

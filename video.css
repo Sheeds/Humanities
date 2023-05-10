@@ -34,3 +34,37 @@
     color: #000;
     padding: 20px;
   }
+
+  @media(max-width: 700px){
+    return-btn {
+      position: fixed;
+      top: 40px;
+      right: 100px;
+      cursor: pointer;
+    }
+  
+    .return-btn img {
+      width: 50px;
+    }
+  
+    .container {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    iframe {
+      width: 600px;
+      height: 500px;
+    }
+  
+    .description {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      background-color: #fff;
+      color: #000;
+      padding: 20px;
+    }
+}
