@@ -10,15 +10,8 @@
             <img src="BSCS/close.png" alt="return button">
         </a>
 
-        <div class="feature-img">
-            <img src="BSCS/pic1.png" width="100%">
-            <img src="BSCS/play.png" class="play-btn" onclick="playVideo('BSCS/video.mp4')">
-        </div>
-        <div class="video-player" id="videoPlayer">
-            <video width="100%" controls autoplay muted id="myVideo">
-                    <source src="BSCS/video.mp4" type="video/mp4">
-            </video>
-            <img src="BSCS/close.png" class="close_btn" onclick="stopVideo()">
+        <div class ="container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TDQspPHorts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         
 
@@ -32,25 +25,7 @@
         </div>
 
         <script>
-            var videoPlayer=document.getElementById("videoPlayer");
-            var myVideo = document.getElementById("myVideo");
-
-            function myFunction(smallImg)
-            {
-                var fullImg = document.getElementById("imageBox")
-                fullImg.src = smallImg.src;
-            }
-
-            function stopVideo(){
-            videoPlayer.style.display = "none";
-            myVideo.muted = true;
-            }
-
-            function playVideo(file){
-            myVideo.src = file;
-            videoPlayer.style.display = "block";
-            myVideo.muted = false;
-            }
+            
         </script>
 
     </body>
