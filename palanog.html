@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <a href="Arts.html#9" class="return-btn">
+        <img src="BSCS/close.png" alt="return button">
+    </a>
+    <div class="product">
+        <div class="product-small-img">
+
+            <img src="Arts/palanog1.JPG" onclick="myFunction(this)">
+            <img src="Arts/palanog2.jpg" onclick="myFunction(this)">
+            <img src="Arts/palanog3.jpg" onclick="myFunction(this)">
+            <img src="Arts/palanog4.jpg" onclick="myFunction(this)">
+
+        </div>
+        <div class="img-container">
+            <img id="imageBox" src="Arts/palanog1.JPG">
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>Title: Naudlot na pagmamahal ni kurt <br>
+        By: Palanog </h2>
+        <p>this drawing is dedicated to earth its show how planet changed.And the title of this is "Before and After Human Exist". because before human was exist planet earth is suitable to live and after human exist it was slowly changed like our temperature was not normal. The material i used is Pencil, illustration board, Color Pencil And Ballpen.</p>
+    </div>
+
+    <script>
+        function myFunction(smallImg)
+        {
+            var fullImg = document.getElementById("imageBox")
+            fullImg.src = smallImg.src;
+        }
+    </script>
+
+</body>
+</html>
